@@ -1,0 +1,76 @@
+/* Reset the default styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+	background-color: #f8f8f8;
+	padding: 20px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: #a9a9a9;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav a.active {
+	color: #00bfff;
+}
+
+/* Style the main content */
+main {
+	padding: 50px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 1.2em;
+	margin-bottom: 30px;
+}
+
+a {
+	display: inline-block;
+	padding: 15px 30px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+a:hover {
+	background-color: #555;
+}
+
+/* Style the footer */
+footer {
+	background-color: #333;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}

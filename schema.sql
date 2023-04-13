@@ -1,0 +1,11 @@
+-- CREATE DATABASE carefinder;
+
+CREATE TABLE caregivers (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  address VARCHAR(255) NOT NULL,
+  experience INTEGER NOT NULL, 
+  skills VARCHAR(255) NOT NULL
+);
