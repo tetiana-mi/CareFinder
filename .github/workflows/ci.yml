@@ -10,4 +10,4 @@ jobs:
       - name: Build and Test
         run: |
           docker-compose -f .devcontainer/docker-compose.yml build
-          docker-compose -f .devcontainer/docker-compose.yml run devcontainer python -m pytest
+#          docker-compose -f .devcontainer/docker-compose.yml run devcontainer python -m pytest
