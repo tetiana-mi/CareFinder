@@ -9,6 +9,9 @@
 header {
 	background-color: #f8f8f8;
 	padding: 20px;
+	-webkit-box-shadow: 1px 10px 17px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 10px 17px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 10px 17px 0px rgba(0,0,0,0.75);
 }
 
 nav {
@@ -31,7 +34,7 @@ nav li:last-child {
 nav a {
 	color: #a9a9a9;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 500px;
 }
 nav a.active {
 	color: #00bfff;
