@@ -1,0 +1,116 @@
+/* Reset the default styles */
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+
+nav {
+  text-align: right;
+}
+
+.logo img {
+float: left;
+height: 110px;
+}
+
+nav ul {
+list-style: none;
+}
+
+nav li {
+display: inline-block;
+margin-right: 20px;
+}
+
+nav li:last-child {
+margin-right: 0;
+}
+
+nav a {
+color: #fffefe;
+text-decoration: none;
+font-weight: bold;
+}
+nav a.active {
+color: #ed0d63;
+} 
+  
+
+
+main {
+	padding: 50px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 1.2em;
+	margin-bottom: 30px;
+}
+
+a {
+	display: inline-block;
+	padding: 15px 30px;
+	background-color: #01adef;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+a:hover {
+	background-color: #008ec6;
+}
+
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input, select {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+button[type="submit"] {
+display: inline-block;
+padding: 12px 24px;
+background-color: #333;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+font-size: 1.2rem;
+font-weight: bold;
+border-radius: 5px;
+margin-right: 10px;}
+
+button:hover {
+  background-color: #333}
+
+footer {
+  background-color: #01adef;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}

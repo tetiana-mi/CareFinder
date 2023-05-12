@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, redirect
+import os
+from flask import Flask, render_template, request, redirect, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:mysecretpassword@localhost:5432/postgres'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DB_URL'] or 'postgresql://postgres:mysecretpassword@localhost:5432/postgres'
 
 db = SQLAlchemy(app)
 
@@ -15,6 +16,9 @@ class Caregiver(db.Model):
     address = db.Column(db.String(255))
     experience = db.Column(db.Integer)
     skills = db.Column(db.String(255))
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 @app.route('/become-a-caregiver', methods=['GET', 'POST'])
 def become_caregiver():
@@ -30,10 +34,6 @@ def become_caregiver():
                               experience=experience, skills=skills)
         db.session.add(caregiver)
         db.session.commit()
-        return redirect('/homepage')
+        return jsonify(caregiver.as_dict())
 
-    return render_template('become-a-caregiver.html')
-
-@app.route('/homepage', methods=['GET'])
-def carefinder_home():
-    return render_template('homepage.html')
+    return ""

@@ -1,19 +1,20 @@
 /* Reset the default styles */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
 }
 
 /* Style the header */
-header {
-	background-color: #f8f8f8;
-	padding: 20px;
-}
 
 nav {
     text-align: right;
 }
+
+.logo img {
+	float: left;
+	height: 110px;
+  }
 
 nav ul {
 	list-style: none;
@@ -29,14 +30,14 @@ nav li:last-child {
 }
 
 nav a {
-	color: #a9a9a9;
+	color: #fffefe;
 	text-decoration: none;
 	font-weight: bold;
 }
-
 nav a.active {
-	color: #00bfff;
+	color: #ed0d63;
 }
+
 
 /* Style the main content */
 main {
@@ -53,10 +54,11 @@ p {
 	font-size: 1.2em;
 	margin-bottom: 30px;
 }
+
 a {
 	display: inline-block;
 	padding: 15px 30px;
-	background-color: #333;
+	background-color: #01adef;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 5px;
@@ -64,7 +66,7 @@ a {
 }
 
 a:hover {
-	background-color: #555;
+	background-color: #008ec6;
 }
 
 form {
@@ -101,7 +103,7 @@ button[type="submit"] {
 
     /* Style the footer */
 footer {
-	background-color: #333;
+	background-color: #01adef;
 	padding: 20px;
 	color: #fff;
 	text-align: center;
