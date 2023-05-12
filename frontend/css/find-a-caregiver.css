@@ -5,41 +5,7 @@ body {
   padding: 0;
 }
 
-/* Style the header */
-
-nav {
-  text-align: right;
-}
-
-.logo img {
-float: left;
-height: 110px;
-}
-
-nav ul {
-list-style: none;
-}
-
-nav li {
-display: inline-block;
-margin-right: 20px;
-}
-
-nav li:last-child {
-margin-right: 0;
-}
-
-nav a {
-color: #fffefe;
-text-decoration: none;
-font-weight: bold;
-}
-nav a.active {
-color: #ed0d63;
-} 
-  
-
-
+/* Style the main content */
 main {
 	padding: 50px;
 	text-align: center;
